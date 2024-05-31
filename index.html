@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management App</title>
+</head>
+<body>
+    <h1>Welcome to the Data Management App</h1>
+    
+    <h2>Fetch Data</h2>
+    <button id="fetch-users">Get Users</button>
+    <button id="fetch-posts">Get Posts</button>
+    <button id="fetch-comments">Get Comments</button>
+    <button id="fetch-post1-comments">Get Comments for Post 1</button>
+
+    <h2>Filter Data</h2>
+    <input type="text" id="filter-posts-title" placeholder="Filter Posts by Title">
+    <button id="filter-posts">Filter Posts</button>
+    
+    <input type="text" id="filter-comments-content" placeholder="Filter Comments by Content">
+    <button id="filter-comments">Filter Comments</button>
+    
+    <h2>Create Data</h2>
+    <form id="create-user-form">
+        <h3>Create User</h3>
+        <input type="text" id="user-name" placeholder="Name" required>
+        <button type="submit">Create User</button>
+    </form>
+
+    <form id="create-post-form">
+        <h3>Create Post</h3>
+        <input type="text" id="post-title" placeholder="Title" required>
+        <textarea id="post-content" placeholder="Content" required></textarea>
+        <button type="submit">Create Post</button>
+    </form>
+
+    <form id="create-comment-form">
+        <h3>Create Comment</h3>
+        <input type="number" id="comment-postId" placeholder="Post ID" required>
+        <textarea id="comment-content" placeholder="Content" required></textarea>
+        <button type="submit">Create Comment</button>
+    </form>
+
+    <h2>Update Data</h2>
+    <form id="update-user-form">
+        <h3>Update User</h3>
+        <input type="number" id="update-user-id" placeholder="User ID" required>
+        <input type="text" id="update-user-name" placeholder="New Name" required>
+        <button type="submit">Update User</button>
+    </form>
+
+    <h2>Delete Data</h2>
+    <form id="delete-user-form">
+        <h3>Delete User</h3>
+        <input type="number" id="delete-user-id" placeholder="User ID" required>
+        <button type="submit">Delete User</button>
+    </form>
+    
+    <h2>Data</h2>
+    <pre id="data">Data will be displayed here</pre>
+
+    <script src="/script.js"></script>
+</body>
+</html>
